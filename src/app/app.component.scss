@@ -1,0 +1,60 @@
+.header{
+  height: 10%;
+  border:2px solid black;
+}
+.main-layout{
+  height: 80%;
+  border:1px solid red;
+}
+.footer{
+  height: 10%;
+  border:2px solid fuchsia;
+}
+.header_menu{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+.wrapper{
+  width: 60%;
+}
+.container{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.one{
+  width: 30%;
+  border: 4px solid green;
+  background-color: greenyellow;
+
+
+}
+.two{
+  width: 30%;
+  border: 4px solid green;
+  background-color: greenyellow;
+}
+.three{
+  width: 30%;
+  border: 4px solid green;
+  background-color: greenyellow;
+}
+.active{
+  background-color: rgb(46, 65, 19) !important;
+  color: white;
+}
+.one:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.two:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+.three:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}

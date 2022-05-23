@@ -1,0 +1,30 @@
+<div class="header">
+    <app-app-header [isMainPageVisible]="isMainPageVisible"
+                    [isAboutUsPageVisible]="isAboutUsPageVisible"
+                    [isConstactPageVisible]="isConstactPageVisible"
+                    (onMainPageSelect)="showMainPage()"
+                    (onAboutUsPageSelect)="showAboutUsPage()"
+                    (onContactPageSelect)="showContactPage()"
+    ></app-app-header>
+</div>
+<!--
+<div class="header">
+  <div class="header_menu">
+    <div class="wrapper"></div>
+      <div class="container">
+          <div class="one" [class.active]="isMainPageVisible" (click)="showMainPage()">Главная</div>
+          <div class="two" [class.active]="isAboutUsPageVisible" (click)="showAboutUsPage()">О нас</div>
+          <div class="three" [class.active]="isConstactPageVisible" (click)="showContactPage()">Контакты</div>
+      </div>
+  </div>
+</div> -->
+
+<div class="main-layout">
+  <app-main *ngIf="isMainPageVisible"></app-main>
+  <app-about-us *ngIf="isAboutUsPageVisible"></app-about-us>
+  <app-contacts *ngIf="isConstactPageVisible"></app-contacts>
+</div>
+
+<div class="footer">
+  <app-app-footer></app-app-footer>
+</div>
